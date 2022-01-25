@@ -1,6 +1,6 @@
 //ABOUT ME
 .about-me {
-    margin-top: 100px;
+    margin-top: 95px;
     height: 90vh;
 
     &__container {
@@ -223,6 +223,15 @@
 @media (max-width: 457px) {
     .experiencie__img {
         width: 75%;
+    }
+    .about-me__description {
+        width: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-me__description {
+        width: 500px;
     }
 }
 

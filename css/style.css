@@ -79,7 +79,7 @@
   font-size: 1.1rem; }
 
 .about-me {
-  margin-top: 100px;
+  margin-top: 95px;
   height: 90vh; }
   .about-me__container {
     top: 30%;
@@ -224,7 +224,13 @@
 
 @media (max-width: 457px) {
   .experiencie__img {
-    width: 75%; } }
+    width: 75%; }
+  .about-me__description {
+    width: 350px; } }
+
+@media (min-width: 768px) {
+  .about-me__description {
+    width: 500px; } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
