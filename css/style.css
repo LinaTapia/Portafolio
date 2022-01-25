@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro:wght@300;400;700&display=swap");
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header-topbar {
+  background-color: #343A40; }
+  .header-topbar__list {
+    list-style-type: none;
+    display: inline-flex;
+    color: #DADADA;
+    margin: .4rem 0;
+    font-size: .8rem; }
+  .header-topbar__title {
+    text-transform: uppercase; }
+  .header-topbar__item {
+    margin-left: 0.7rem; }
+    .header-topbar__item a {
+      color: #DADADA; }
+      .header-topbar__item a:hover {
+        color: #b6b6b6; }
+
+.navbar-dark .navbar-brand {
+  color: #A8B0D1;
+  font-weight: 700;
+  font-size: 1.75rem; }
+  .navbar-dark .navbar-brand:hover {
+    color: #cdd6f2; }
+
+.navbar-dark .navbar-nav .nav-link {
+  position: relative;
+  color: #A8B0D1;
+  font-weight: 700;
+  margin-left: 15px;
+  font-size: 1.1rem; }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end; }
+  /* ANIMACIÓN NAVBAR */
+  .navbar-dark .navbar-brand:hover {
+    color: #cdd6f2; }
+  .navbar-dark .navbar-nav .nav-link {
+    position: relative;
+    color: #A8B0D1;
+    font-weight: 700;
+    margin-left: 15px; }
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #cdd6f2;
+      font-weight: 700; }
+    .navbar-dark .navbar-nav .nav-link::after {
+      content: "";
+      background-color: #cdd6f2;
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .5s; }
+    .navbar-dark .navbar-nav .nav-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: center; } }
+
+.footer__content {
+  color: #A8B0D1;
+  height: 40px; }
+
+.footer__btn {
+  color: #A8B0D1;
+  border: 1px solid #A8B0D1;
+  margin-left: 10px;
+  height: 30px;
+  line-height: 1;
+  border-radius: 0; }
+  .footer__btn:hover {
+    background-color: #A8B0D1;
+    color: #212529; }
+
+.footer__question {
+  font-weight: 700;
+  font-size: 1.1rem; }
+
+.about-me {
+  margin-top: 100px;
+  height: 90vh; }
+  .about-me__container {
+    top: 30%;
+    position: relative; }
+  .about-me__smallText {
+    color: white;
+    font-size: 1.1rem; }
+  .about-me__title {
+    color: #974CCD;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 4rem; }
+  .about-me__description {
+    color: #A8B0D1;
+    text-align: justify;
+    width: 400px;
+    font-size: 1.25rem; }
+  .about-me__btn {
+    background-color: #352A7C;
+    color: white;
+    width: 250px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: .4s; }
+    .about-me__btn:hover {
+      background-color: #974ccd70;
+      color: white;
+      transition: .4s; }
+
+/* EDUCATION */
+.education {
+  background-color: #343A40; }
+  .education__title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 30px 0; }
+    .education__title span {
+      padding-left: .7rem; }
+  .education__img {
+    padding-right: var(--bs-gutter-x, 1.25rem);
+    padding-left: var(--bs-gutter-x, 1.25rem);
+    padding-top: 20px;
+    margin: 10px 0;
+    width: 250px; }
+
+.card {
+  width: 90%; }
+  .card:nth-child(1) {
+    border-bottom: 10px solid #974CCD; }
+  .card:nth-child(2) {
+    border-bottom: 10px solid #FF67FF;
+    margin: 20px; }
+  .card:nth-child(3) {
+    border-bottom: 10px solid #FEC6EF;
+    margin-bottom: 50px; }
+
+.card-title {
+  font-weight: 700;
+  text-align: center;
+  width: 200px;
+  font-size: 1.25rem; }
+
+.card-body {
+  color: white; }
+  .card-body__text {
+    padding: 20px 0;
+    font-size: 1.1rem; }
+  .card-body__italic {
+    font-style: italic; }
+  .card-body__desc {
+    padding: 20px; }
+
+/* EXPERIENCIE */
+.experiencie {
+  padding-bottom: 50px; }
+  .experiencie__title {
+    color: white;
+    text-transform: uppercase;
+    padding-top: 30px; }
+    .experiencie__title h2 {
+      font-weight: 700;
+      font-size: 3rem; }
+    .experiencie__title p {
+      font-size: 3rem;
+      padding-left: 90px; }
+  .experiencie__description {
+    color: white;
+    text-align: justify;
+    font-size: 1.1rem; }
+  .experiencie__list {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .experiencie__titleList {
+    font-weight: 700; }
+  .experiencie__item {
+    font-size: 1.25rem; }
+    .experiencie__item:nth-child(2) {
+      padding: 10px 0; }
+    .experiencie__item span {
+      padding-left: 5px; }
+  .experiencie__img {
+    width: 95%; }
+  .experiencie__bar {
+    margin-top: 50px;
+    color: white; }
+    .experiencie__bar:not([size]) {
+      height: 2px; }
+
+.fa-database {
+  margin: 0 2.5px; }
+
+/* SKILLS */
+.skills {
+  padding-bottom: 50px; }
+  .skills__card {
+    background-color: #1E2124;
+    width: 100%; }
+  .skills__titleCard {
+    text-align: start; }
+  .skills__title {
+    color: white;
+    text-transform: uppercase; }
+    .skills__title h2 {
+      font-size: 3rem;
+      font-weight: 700; }
+    .skills__title p {
+      font-size: 3rem; }
+  .skills__git {
+    color: white;
+    padding-bottom: 30px; }
+    .skills__git a {
+      color: white;
+      text-decoration: none;
+      padding-right: 10px; }
+
+.fa-code {
+  color: #974CCD;
+  padding-right: 5px; }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end; }
+  .about-me__container {
+    top: 0%; }
+  .about-me__content {
+    top: 30%;
+    position: relative; }
+  .about-me__bg {
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    height: 90vh;
+    background-position-y: center; }
+  .card {
+    width: 300px; }
+    .card:nth-child(2) {
+      margin: 0; }
+    .card:nth-child(3) {
+      margin-bottom: 0; }
+  .education {
+    padding-bottom: 70px; }
+  .skills__card {
+    width: 500px; }
+  /* ANIMACION SKILLS */
+  .skills__git:hover {
+    color: #cdd6f2; }
+    .skills__git:hover a:hover {
+      color: #cdd6f2;
+      font-weight: 700; } }
+
+@media (min-width: 1200px) {
+  .card {
+    width: 350px; }
+  .skills__card {
+    width: 600px; } }

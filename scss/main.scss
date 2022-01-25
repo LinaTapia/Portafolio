@@ -1,0 +1,14 @@
+@import './variables/fuentes.scss';
+
+* {
+    font-family: $sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+
+@import './utilidades/header';
+@import './utilidades/footer';
+@import './secciones/index';
