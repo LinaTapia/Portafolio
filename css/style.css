@@ -154,41 +154,41 @@
     padding: 20px; }
 
 /* EXPERIENCIE */
-.experiencie {
+.experience {
   padding-bottom: 50px; }
-  .experiencie__title {
+  .experience__title {
     color: white;
     text-transform: uppercase;
     padding-top: 30px; }
-    .experiencie__title h2 {
+    .experience__title h2 {
       font-weight: 700;
       font-size: 3rem; }
-    .experiencie__title p {
+    .experience__title p {
       font-size: 3rem;
       padding-left: 90px; }
-  .experiencie__description {
+  .experience__description {
     color: white;
     text-align: justify;
     font-size: 1.1rem; }
-  .experiencie__list {
+  .experience__list {
     list-style-type: none;
     padding-left: 0;
     padding-top: 20px;
     padding-bottom: 20px; }
-  .experiencie__titleList {
+  .experience__titleList {
     font-weight: 700; }
-  .experiencie__item {
+  .experience__item {
     font-size: 1.25rem; }
-    .experiencie__item:nth-child(2) {
+    .experience__item:nth-child(2) {
       padding: 10px 0; }
-    .experiencie__item span {
+    .experience__item span {
       padding-left: 5px; }
-  .experiencie__img {
+  .experience__img {
     width: 95%; }
-  .experiencie__bar {
+  .experience__bar {
     margin-top: 50px;
     color: white; }
-    .experiencie__bar:not([size]) {
+    .experience__bar:not([size]) {
       height: 2px; }
 
 .fa-database {
