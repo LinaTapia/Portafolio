@@ -9,26 +9,26 @@
     }
 
     &__smallText {
-        color: white;
+        color: $blanco;
         font-size: 1.1rem;
     }
 
     &__title {
-        color: #974CCD;
+        color: $morado;
         font-weight: 700;
         text-transform: capitalize;
         font-size: 4rem;
     }
 
     &__description {
-        color: #A8B0D1;
+        color: $color-texto;
         text-align: justify;
         width: 400px;
         font-size: 1.25rem;
     }
 
     &__btn {
-        background-color: #352A7C;
+        background-color: $color-btn;
         color: white;
         width: 250px;
         border-radius: 50px;
@@ -36,8 +36,8 @@
         transition: .4s;
 
         &:hover {
-            background-color: #974ccd70;
-            color: white;
+            background-color: $color-hover-btn;
+            color: $blanco;
             transition: .4s;
         }
     }
@@ -45,10 +45,10 @@
 
 /* EDUCATION */
 .education {
-    background-color: #343A40;
+    background-color: $gris;
 
     &__title {
-        color: white;
+        color: $blanco;
         font-size: 3rem;
         font-weight: 700;
         padding: 30px 0;
@@ -71,16 +71,16 @@
     width: 90%;
 
     &:nth-child(1) {
-        border-bottom: 10px solid #974CCD;
+        border-bottom: 10px solid $morado;
     }
 
     &:nth-child(2) {
-        border-bottom: 10px solid #FF67FF;
+        border-bottom: 10px solid $rosado;
         margin: 20px;
     }
 
     &:nth-child(3) {
-        border-bottom: 10px solid #FEC6EF;
+        border-bottom: 10px solid $piel;
         margin-bottom: 50px;
     }
 }
@@ -93,7 +93,7 @@
 }
 
 .card-body {
-    color: white;
+    color: $blanco;
 
     &__text {
         padding: 20px 0;
@@ -114,7 +114,7 @@
     padding-bottom: 50px;
 
     &__title {
-        color: white;
+        color: $blanco;
         text-transform: uppercase;
         padding-top: 30px;
 
@@ -130,7 +130,7 @@
     }
 
     &__description {
-        color: white;
+        color: $blanco;
         text-align: justify;
         font-size: 1.1rem;
     }
@@ -190,7 +190,7 @@
     }
 
     &__title {
-        color: white;
+        color: $blanco;
         text-transform: uppercase;
 
         h2 {
@@ -204,11 +204,11 @@
     }
 
     &__git {
-        color: white;
+        color: $blanco;
         padding-bottom: 30px;
 
         a {
-            color: white;
+            color: $blanco;
             text-decoration: none;
             padding-right: 10px;
         }
@@ -216,9 +216,16 @@
 }
 
 .fa-code {
-    color: #974CCD;
+    color: $morado;
     padding-right: 5px;
 }
+
+@media (max-width: 457px) {
+    .experiencie__img {
+        width: 75%;
+    }
+}
+
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
@@ -268,10 +275,10 @@
 
     /* ANIMACION SKILLS */
     .skills__git:hover {
-        color: #cdd6f2;
+        color: $color-hover-texto;
 
         a:hover {
-            color: #cdd6f2;
+            color: $color-hover-texto;
             font-weight: 700;
         }
     }

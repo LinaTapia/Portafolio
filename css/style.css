@@ -11,7 +11,7 @@
   .header-topbar__list {
     list-style-type: none;
     display: inline-flex;
-    color: #DADADA;
+    color: #A8B0D1;
     margin: .4rem 0;
     font-size: .8rem; }
   .header-topbar__title {
@@ -19,9 +19,9 @@
   .header-topbar__item {
     margin-left: 0.7rem; }
     .header-topbar__item a {
-      color: #DADADA; }
+      color: #A8B0D1; }
       .header-topbar__item a:hover {
-        color: #b6b6b6; }
+        color: #cdd6f2; }
 
 .navbar-dark .navbar-brand {
   color: #A8B0D1;
@@ -41,30 +41,23 @@
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end; }
   /* ANIMACIÓN NAVBAR */
-  .navbar-dark .navbar-brand:hover {
-    color: #cdd6f2; }
-  .navbar-dark .navbar-nav .nav-link {
-    position: relative;
-    color: #A8B0D1;
-    font-weight: 700;
-    margin-left: 15px; }
-    .navbar-dark .navbar-nav .nav-link:hover {
-      color: #cdd6f2;
-      font-weight: 700; }
-    .navbar-dark .navbar-nav .nav-link::after {
-      content: "";
-      background-color: #cdd6f2;
-      width: 100%;
-      height: 3px;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform .5s; }
-    .navbar-dark .navbar-nav .nav-link:hover::after {
-      transform: scaleX(1);
-      transform-origin: center; } }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #cdd6f2;
+    font-weight: 700; }
+  .navbar-dark .navbar-nav .nav-link::after {
+    content: "";
+    background-color: #cdd6f2;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s; }
+  .navbar-dark .navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: center; } }
 
 .footer__content {
   color: #A8B0D1;
@@ -228,6 +221,10 @@
 .fa-code {
   color: #974CCD;
   padding-right: 5px; }
+
+@media (max-width: 457px) {
+  .experiencie__img {
+    width: 75%; } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {

@@ -1,19 +1,19 @@
 .footer {
     &__content {
-        color: #A8B0D1;
+        color: $color-texto;
         height: 40px;
     }
 
     &__btn {
-        color: #A8B0D1;
-        border: 1px solid #A8B0D1;
+        color: $color-texto;
+        border: 1px solid $color-texto;
         margin-left: 10px;
         height: 30px;
         line-height: 1;
         border-radius: 0;
 
         &:hover {
-            background-color: #A8B0D1;
+            background-color: $color-texto;
             color: rgb(33, 37, 41);
         }
     }
